@@ -15,7 +15,9 @@
 <td><%= f.nombre %></td>
 <td><%= f.apellido %></td>
 <td><%= f.correo %></td>
-<td><%= link_to 'editar', edit_usuario_path(f) %></td>
+<td><%= link_to 'Editar', edit_usuario_path(f) %></td>
+<td><%= link_to 'Destroy', usuario_path(f),
+				method: :delete, data: { confirm: 'Estas Seguro?' } %></td>
 </tr>
 <% end %>
 </table>

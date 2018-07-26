@@ -15,18 +15,6 @@ ActiveRecord::Schema.define(version: 2018_07_26_000820) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "Clases", id: false, force: :cascade do |t|
-    t.decimal "Id", precision: 5
-    t.text "Nombre"
-  end
-
-  create_table "personas", id: false, force: :cascade do |t|
-    t.serial "id", null: false
-    t.string "cedula", limit: 10
-    t.string "pnombre", limit: 30
-    t.string "papellido", limit: 30
-  end
-
   create_table "usuarios", force: :cascade do |t|
     t.string "nombre"
     t.string "apellido"
