@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :students
   get 'usuarios/new'
   #get 'welcome/index'
   resources :usuarios
